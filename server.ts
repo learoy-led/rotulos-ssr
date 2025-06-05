@@ -4,6 +4,24 @@ import express from 'express';
 import { fileURLToPath } from 'node:url';
 import { dirname, join, resolve } from 'node:path';
 import bootstrap from './src/main.server';
+import mainRouter from './src/api/routes/index.routes.js';
+
+
+const { connectDB } = require('./src/api/config/db');
+const cors = require('cors');
+const bodyParser = require('body-parser');
+
+
+const corsOptions = {
+  origin: ['https://www.rotuloslearoy.com', 'http://localhost:4200'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true, // Permitir cookies
+  };
+
+ 
+
+
 
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
@@ -11,6 +29,12 @@ export function app(): express.Express {
   const serverDistFolder = dirname(fileURLToPath(import.meta.url));
   const browserDistFolder = resolve(serverDistFolder, '../browser');
   const indexHtml = join(serverDistFolder, 'index.server.html');
+
+  //estas 4 son mías
+  server.use(cors(corsOptions));
+  server.use(bodyParser.json());
+  connectDB();
+  server.use('/api', mainRouter)
 
   const commonEngine = new CommonEngine();
 
@@ -45,6 +69,7 @@ export function app(): express.Express {
 }
 
 function run(): void {
+  //ver si dejo 3001 como tenía o 4000 de ssr por defecto
   const port = process.env['PORT'] || 4000;
 
   // Start up the Node server
