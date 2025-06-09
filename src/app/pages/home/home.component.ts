@@ -8,7 +8,7 @@ import { ItemsCarouselComponent } from '../../shared/items-carousel/items-carous
 import { AnimatedVerticalCarouselComponent } from '../../shared/animated-vertical-carousel/animated-vertical-carousel.component';
 import { HomeCarouselComponent } from './components/home-carousel/home-carousel.component';
 import { Observable, Subscription } from 'rxjs';
-import { Category } from '../../../models/models.';
+import { Category } from '../../../models/models';
 import { GetProductsService } from '../../core/services/get-products.service';
 
 @Component({

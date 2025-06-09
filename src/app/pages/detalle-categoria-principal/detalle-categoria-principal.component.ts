@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Category } from '../../../models/models.';
+import { Category } from '../../../models/models';
 import { IMAGEPREURL } from '../../data/data';
 import { ActivatedRoute } from '@angular/router';
 import { GetProductsService } from '../../core/services/get-products.service';

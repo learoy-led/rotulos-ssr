@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { aboutParagraphs } from '../../data/data';
-import { AboutParagraph } from '../../../models/models.';
+import { AboutParagraph } from '../../../models/models';
 import { ContactBannerComponent } from '../../shared/contact-banner/contact-banner.component';
 import { CommonModule } from '@angular/common';
 

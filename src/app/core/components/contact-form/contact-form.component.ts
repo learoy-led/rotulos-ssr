@@ -2,7 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Subscription } from 'rxjs';
 import { emailValidator } from './validator';
-import { FormData } from '../../../../models/models.';
+import { FormData } from '../../../../models/models';
 import { SendEmailService } from '../../../services/send-email.service';
 import { FormsModule } from '@angular/forms';
 

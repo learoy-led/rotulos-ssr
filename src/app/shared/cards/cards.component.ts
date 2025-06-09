@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { Category, Product } from '../../../models/models.';
+import { Category, Product } from '../../../models/models';
 import { IMAGEPREURL } from '../../data/data';
 import { Subscription } from 'rxjs';
 import { ActivatedRoute, Router } from '@angular/router';

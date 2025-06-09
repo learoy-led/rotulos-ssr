@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Category } from '../../../models/models.';
+import { Category } from '../../../models/models';
 import { GetProductsService } from '../../core/services/get-products.service';
 import { CardsComponent } from '../../shared/cards/cards.component';
 import { CommonModule } from '@angular/common';

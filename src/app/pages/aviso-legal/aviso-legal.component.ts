@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { contactDetails } from '../../data/data';
-import { ContactDetails } from '../../../models/models.';
+import { ContactDetails } from '../../../models/models';
 
 @Component({
   selector: 'app-aviso-legal',

@@ -2,7 +2,7 @@ import {
   AboutParagraph,
   ContactDetails,
   letterImage,
-} from '../../models/models.';
+} from '../../models/models';
 
 export const carouselImages: string[] = [
   'https://res.cloudinary.com/dxuseyfxa/image/upload/v1742550802/rotulo-luminoso-learoy_dgqanb.webp',

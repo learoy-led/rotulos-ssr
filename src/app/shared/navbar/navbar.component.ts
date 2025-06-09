@@ -3,7 +3,7 @@ import { Observable } from 'rxjs';
 import { GetProductsService } from '../../core/services/get-products.service';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { Category } from '../../../models/models.';
+import { Category } from '../../../models/models';
 
 @Component({
   selector: 'app-navbar',

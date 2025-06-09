@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Category } from '../../../models/models.';
+import { Category } from '../../../models/models';
 import { Observable } from 'rxjs';
 import { IMAGEPREURL } from '../../data/data';
 import { GetProductsService } from '../../core/services/get-products.service';

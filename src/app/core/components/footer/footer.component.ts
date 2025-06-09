@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Category, ContactDetails } from '../../../../models/models.';
+import { Category, ContactDetails } from '../../../../models/models';
 import { contactDetails } from '../../../data/data';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';

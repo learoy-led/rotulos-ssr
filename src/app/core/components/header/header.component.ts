@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ContactDetails } from '../../../../models/models.';
+import { ContactDetails } from '../../../../models/models';
 import { contactDetails } from '../../../data/data';
 import { NavbarComponent } from '../../../shared/navbar/navbar.component';
 import { SubmenuComponent } from '../../../shared/submenu/submenu.component';

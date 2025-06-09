@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from 'express'; 
 import { SitemapStream, streamToPromise } from "sitemap";
 import Category from "../models/category.model";
-import { Product } from '../../models/models.';
+import { Product } from '../../models/models';
 
 export const getSitemap = async (req: Request, res: Response, next: NextFunction) => {
     try {

@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { letterImage } from '../../../models/models.';
+import { letterImage } from '../../../models/models';
 import { letterImages } from '../../data/data';
 
 @Component({

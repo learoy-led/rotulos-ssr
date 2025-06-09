@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { IMAGEPREURL } from '../../data/data';
 import { GetProductsService } from '../../core/services/get-products.service';
-import { Product } from '../../../models/models.';
+import { Product } from '../../../models/models';
 import { CommonModule } from '@angular/common';
 //import { NotFoundComponent } from '../../shared/not-found/not-found.component';
 import { ButtonComponent } from '../../shared/button/button.component';

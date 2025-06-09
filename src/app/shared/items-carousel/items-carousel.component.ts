@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { CardsComponent } from '../cards/cards.component';
 import { CommonModule } from '@angular/common';
-import { Product } from '../../../models/models.';
+import { Product } from '../../../models/models';
 import { Subscription } from 'rxjs';
 import { ActivatedRoute } from '@angular/router';
 import { GetProductsService } from '../../core/services/get-products.service';

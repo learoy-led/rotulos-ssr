@@ -1,14 +1,15 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Category, Product } from '../../../models/models.';
+import { Category, Product } from '../../../models/models';
 
 @Injectable({
   providedIn: 'root'
 })
 export class GetProductsService {
   
-  public API_URL = '/api/'
+  //public API_URL = '/api/'
+  public API_URL = 'https://rotuloslearoy-api.onrender.com/api/'
   
   constructor(private http: HttpClient) {}
 
