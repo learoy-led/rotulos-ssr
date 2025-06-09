@@ -5,8 +5,10 @@ import Category from '../models/category.model';
 export const getAllCategories = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const categories = await Category.find().populate('products');
+    console.log('console categorias ok')
     return res.status(200).json(categories);
   } catch (error) {
+    console.log('console categorias error')
     return next(new Error('Categorías no encontradas' + error));
   }
 };

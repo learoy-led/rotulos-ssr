@@ -1,0 +1,35 @@
+<!-- <ng-template #nocategory>
+    <app-not-found [notFoundText]="'No hay categorías de rótulos con este nombre'"></app-not-found>
+</ng-template> -->
+
+<!-- <ng-container *ngIf="categorySelectedData; else nocategory"> -->
+    <ng-container *ngIf="categorySelectedData;">
+<main class="category-page">
+    <section class="centered-section">
+        <h1 class="page-title centered-text">{{categorySelectedData.name}}</h1>
+        <app-cards [extraClass]="'cards-grid'" [cardElements]="categorySelectedData.products"></app-cards>
+    </section>
+
+    <section>
+      <ul class="advantages-list centered-text">
+        <li>
+            <h2 class="text-title">¿Cuándo elegir {{categorySelectedData.name}}?</h2>
+            <p>{{categorySelectedData.description.application}}</p>
+        </li>
+        <li>
+            <h2 class="text-title">Tipos de {{categorySelectedData.name}}</h2>
+            <p>{{categorySelectedData.description.products}}</p>
+        </li>
+        <li>
+            <h2 class="text-title">¿Se pueden personalizar {{ categorySelectedData.name | gender}} {{categorySelectedData.name}}?</h2>
+            <p>{{categorySelectedData.description.custom}}</p>
+        </li>
+        <li>
+            <h2 class="text-title">¿Cuánto cuestan {{ categorySelectedData.name | gender}} {{categorySelectedData.name}}?</h2>
+            <p>{{categorySelectedData.description.cost}}</p>
+        </li>
+    </ul>
+</section>
+
+</main>
+</ng-container>

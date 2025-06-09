@@ -8,7 +8,8 @@ if (!MONGO_URI) {
   throw new Error('⚠️ La variable de entorno MONGO_URI no está definida');
 }
 
-const connectDB = async () => {
+export const connectDB = async () => {
+
   try {
     await mongoose.connect(MONGO_URI);
     console.log('Conectado a DB');
@@ -16,5 +17,3 @@ const connectDB = async () => {
     console.log('Error conectando a DB', error);
   }
 };
-
-export default { connectDB };

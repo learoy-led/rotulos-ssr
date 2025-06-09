@@ -10,7 +10,12 @@ import {
 const router = express.Router();
 
 
+
 router.get('/', getAllCategories);
+router.get('/ping', (req, res) => {
+  console.log('📡 Recibida petición a /ping');
+  res.json({ status: 'ok' });
+});
 router.get('/:slug', getCategoryBySlug);
 router.post('/', createCategory);
 router.put('/:slug', updateCategory);

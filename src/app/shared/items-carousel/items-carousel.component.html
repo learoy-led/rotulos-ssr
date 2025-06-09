@@ -1,0 +1,9 @@
+<i (click)="carouselPrevElements()" [hidden]="hideCarouselPrevArrow" class="fa-solid fa-circle-chevron-left"></i>
+<app-cards [cardElements]="isMobile? products : productsShown"></app-cards>
+<i (click)="carouselNextElements()"[hidden]="hideCarouselNextArrow" class="fa-solid fa-circle-chevron-right"></i>
+        <!-- <ul class="carousel-dots">
+            <li class="carousel-dot" [class.active]="i === elementIndex" *ngFor="let category of categories; let i = index" (click)="carouselElementChange(i)"></li>
+        </ul> -->
+
+
+        
